@@ -96,6 +96,9 @@ h1 {
             padding: 3rem 6rem;
         }
     }
+    &.default {
+        background: #F3F3F3;
+    }
     .project-tagline {
         margin-bottom: 1rem;
         @include large {
