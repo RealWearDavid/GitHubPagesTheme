@@ -91,7 +91,7 @@ h1 {
     text-align: left;
     &.product {
         background-color: #7F7F7F;
-        background-image: url(../images/product-bg.jpg);
+        //background-image: url(../images/product-bg.jpg);
         @include large {
             padding: 3rem 6rem;
         }
