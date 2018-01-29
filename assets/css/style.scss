@@ -3,6 +3,7 @@
 
 @import 'jekyll-theme-cayman';
 
+$purple: #4816AC;
 a {
     color: #451cab;
     font-weight: 500;
@@ -226,12 +227,17 @@ h1 {
     .step {
         position: relative;
         padding-left: 50px;
+        padding-top: 3px;
         span {
+            color: $purple;
             font-weight: 800;
             font-size: 40px;
             position: absolute;
             left: 0;
             top:0;
+        }
+        h3 {
+            font-size: 22px;
         }
     }
 }
