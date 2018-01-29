@@ -222,3 +222,16 @@ h1 {
 .site-footer-owner {
     font-weight: normal;
 }
+.steps-wrap {
+    .step {
+        position: relative;
+        padding-left: 50px;
+        span {
+            font-weight: 800;
+            font-size: 40px;
+            position: absolute;
+            left: 0;
+            top:0;
+        }
+    }
+}
