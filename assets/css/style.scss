@@ -227,10 +227,11 @@ h1 {
         position: relative;
         padding-left: 50px;
         padding-top: 3px;
+        margin-bottom: 15px;
         span {
             color: #4816AC;
             font-weight: 800;
-            font-size: 22px;
+            font-size: 30px;
             position: absolute;
             left: 0;
             top:0;
@@ -239,6 +240,7 @@ h1 {
             font-size: 22px;
             padding: 0;
             margin: 0;
+            font-weight: 500;
         }
         p {
             margin-top: 3px;
