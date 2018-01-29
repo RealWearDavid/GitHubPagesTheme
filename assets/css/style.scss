@@ -90,11 +90,8 @@ h1 {
     padding: 0.8rem 0;
     text-align: left;
     &.product {
-        background-color: #7F7F7F;
+        background-color: #f4f4f4;
         //background-image: url(../images/product-bg.jpg);
-        @include large {
-            padding: 3rem 6rem;
-        }
     }
     .project-tagline {
         margin-bottom: 1rem;
