@@ -10,7 +10,14 @@
   <body>
     {% include header.html %}
     <section class="page-header default">
-        <p class="breadcrumbs"><a href="/">{{ site.title }}</a> > {{ page.title }}</p>
+        <p class="breadcrumbs">
+			<a href="/">RealWear GitHub</a>
+			{% if page.optional-page-link %}
+                > <a href="{{ page.optional-page-link }}">{{ page.optional-page-title }}</a>
+			{% endif %} 
+			> {{ page.title }}
+		</p>
+				
         <div class="content">
           <h1 class="project-name">{{ page.title | default: site.github.repository_name }}</h1>
           <h2 class="project-tagline">{{ page.description | default: site.github.project_tagline }}</h2>
