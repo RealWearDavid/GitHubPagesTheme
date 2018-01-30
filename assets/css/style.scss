@@ -89,17 +89,6 @@ h1 {
     color: black;
     padding: 0.8rem 0;
     text-align: left;
-    &.product {
-        background-color: #fff;
-        //background-image: url(../images/product-bg.jpg);
-        h1 {
-            font-size: 2.5rem
-        }
-        h2 {
-            font-size: 1.2rem;
-            font-weight: 300;
-        }
-    }
     .project-tagline {
         margin-bottom: 1rem;
         @include large {
@@ -119,8 +108,8 @@ h1 {
     }
     .breadcrumbs {
         @include large {
-            max-width: 64rem;
-            padding:0 6rem;
+            max-width: 58rem;
+            padding:0;
             margin: 0 auto;
           }
 
@@ -135,6 +124,28 @@ h1 {
     }
     .main-content {
         border-bottom: 2px solid #ccc;
+    }
+}
+.page-header {
+    &.product {
+        background-color: #fff;
+        //background-image: url(../images/product-bg.jpg);
+        h1 {
+            font-size: 2.5rem
+        }
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        .main-content {
+            @include large {
+                max-width: 58rem;
+                padding: 2rem 0;
+            }
+            @include medium {
+                padding: 0 4rem;
+              }
+        }
     }
 }
 .flex-container {
