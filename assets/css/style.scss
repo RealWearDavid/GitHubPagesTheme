@@ -3,7 +3,6 @@
 
 @import 'jekyll-theme-cayman';
 
-/* General Styles */
 a {
     color: #451cab;
     font-weight: 500;
@@ -18,40 +17,6 @@ a {
 .text-center {
     text-align: center;
 }
-.grey-bg {
-    background-color:#E7E7E7;
-}
-h1 {
-    font-weight: 500;
-}
-.btn {
-    position: relative;
-    display: inline-block;
-    line-height: 1;
-    font-size: 0.9rem;
-    padding: 1em 2.5em;
-    min-width: 12rem;
-    text-align: center;
-    transition: 0.3s ease all;
-    -moz-transition: 0.3s ease all;
-    -webkit-transition: 0.3s ease all;
-    color: white;
-    border: 1px solid white;
-    border-radius: 0;
-    &.dark {
-        color: #666;
-        border: 1px solid #666;
-    }
-    &:hover {
-        text-decoration: none;
-        background: $core-purple;
-        color: white;
-        border-color: $core-purple;
-    }
-}
-
-/* Header Nav Bar */
-
 .github {
     padding-top: 2px;
     a {
@@ -76,8 +41,9 @@ h1 {
     }
 }
 
-/* Page Banners */
-
+.grey-bg {
+    background-color:#E7E7E7;
+}
 .site-header {
     @include large {
     max-width: 64rem;
@@ -97,16 +63,35 @@ h1 {
       text-align: center;
   }
 }
-.main-content {
-    h1 {
-        margin-bottom: 0;
+h1 {
+    font-weight: 500;
+}
+.home-header {
+    background-color: #333333;
+    background-image: url(../images/image-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 2rem 1rem;
+    @include large {
+        padding: 7rem 1rem;
     }
-    h2 {
-        font-size: 2rem;
+    color: white;
+    text-align: center;
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 3rem;
         font-weight: 500;
-        @include small {
-            font-size: 1.6rem;
+        @include medium {
+            font-size: 2rem;
         }
+        @include small {
+            font-size: 2rem;
+        }
+    }
+    .project-tagline {
+        font-size: 1.8rem;
     }
 }
 .page-header {
@@ -155,32 +140,114 @@ h1 {
         border-bottom: 2px solid #ccc;
     }
 }
-.page-header.product {
-    background-color: #fff;
-    h1 {
-        font-size: 2.8rem
-    }
-    h2 {
-        font-size: 1.2rem;
-        font-weight: 300;
-    }
-    .main-content {
-        @include large {
-            max-width: 52rem;
-            padding: 2rem 0;
+.page-header {
+    &.product {
+        background-color: #fff;
+        //background-image: url(../images/product-bg.jpg);
+        h1 {
+            font-size: 2.8rem
         }
-        @include medium {
-            margin: 0 4rem;
-          }
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        .main-content {
+            @include large {
+                max-width: 52rem;
+                padding: 2rem 0;
+            }
+            @include medium {
+                margin: 0 4rem;
+              }
+            @include small {
+                padding: 1rem 0;
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -0.3rem;
+
+    .flex-item {
+        background: #999999;
+        flex: 1 1 calc(15% - 1rem);
+        margin: 0.3rem;
+        padding: 0.2rem;
+        text-align: center;
+        line-height: 6rem;
+        font-weight: 600;
+        color: #fff;
+        transition: background 0.5s;
+        text-decoration: none;
+        @include medium { 
+            flex: 1 1 calc(33.33% - 1rem);
+        }
         @include small {
-            padding: 1rem 0;
-            margin: 0 1rem;
+            flex: 1 1 calc(50% - 1rem);
+        }
+        &:hover {
+            background: #4822A9;
         }
     }
 }
 
-/* Footer */
-
+.btn {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    font-size: 0.9rem;
+    padding: 1em 2.5em;
+    min-width: 12rem;
+    text-align: center;
+    transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    &.dark {
+        color: #666;
+        border: 1px solid #666;
+    }
+    &:hover {
+        text-decoration: none;
+        background: $core-purple;
+        color: white;
+        border-color: $core-purple;
+    }
+}
+.icon-block {
+    position: relative;
+    padding-left: 110px;
+    img {
+        width: 80px;
+        position: absolute;
+        top:0;
+        left: 0;
+        @include small {
+            position: static;
+        }
+    }
+}
+.main-content {
+    h1 {
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: 500;
+        @include small {
+            font-size: 1.6rem;
+        }
+    }
+}
+.block.familiar {
+    margin: 2rem 0;
+}
 .site-footer {
     text-align: center;
 }
