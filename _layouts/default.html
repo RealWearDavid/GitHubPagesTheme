@@ -9,7 +9,7 @@
   </head>
   <body>
     {% include header.html %}
-      
+
     <section class="page-header product">
         <p class="breadcrumbs">
             <a href="https://realwear.github.io/">Developers Guide</a>  
@@ -19,15 +19,20 @@
             {% if site.title != page.title %}
             > <a href="https://realwear.github.io/{{ site.title }}">{{ site.title }}</a>
             {% endif %} 
-            > {{ page.title }}</p>
+            > {{ page.title }}
+        </p>
+
         <div class="main-content text-center">
           <h1 class="project-name">{{ page.title | default: site.github.repository_name }}</h1>
+
           {% if page.description %}
             <h2 class="project-tagline">{{ page.description }}</h2>
-            {% endif %} 
-          {% if site.github.is_project_page and site.title == page.title %}
+          {% endif %} 
+
+          {% if site.github.is_project_page and site.title == page.title and page.is_private != "yes" %}
             <a href="{{ site.github.repository_url }}" class="btn dark">View on GitHub</a>
           {% endif %}
+
           {% if page.link %}
             <a href="{{ page.link }}" class="btn dark">Download .zip</a>
           {% endif %}
