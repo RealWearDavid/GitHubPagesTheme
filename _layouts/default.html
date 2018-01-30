@@ -16,8 +16,8 @@
             {% if page.optional-page-link %}
                 > <a href="{{ page.optional-page-link }}">{{ page.optional-page-title }}</a>
             {% endif %} 
-            > {{ page.title }}</p>
-        <div class="content">
+            > <a href="https://realwear.github.io/{{ site.title }}">{{ site.title }}</a> > {{ page.title }}</p>
+        <div class="main-content text-center">
           <h1 class="project-name">{{ page.title | default: site.github.repository_name }}</h1>
           <h2 class="project-tagline">{{ page.description | default: site.github.project_tagline }}</h2>
           {% if site.github.is_project_page %}
