@@ -29,8 +29,10 @@
             <h2 class="project-tagline">{{ page.description }}</h2>
           {% endif %} 
 		  
-          {% if site.github.is_project_page and site.title == page.title and page.is_private == false %}
-            <a href="{{ site.github.repository_url }}" class="btn dark">View on GitHub</a>
+          {% if site.github.is_project_page and site.title == page.title %}
+		    {% if page.is_private == false or page.is_private == blank %}
+              <a href="{{ site.github.repository_url }}" class="btn dark">View on GitHub</a>
+            {% endif %}
           {% endif %}
 
           {% if page.link %}
