@@ -29,6 +29,8 @@
             <h2 class="project-tagline">{{ page.description }}</h2>
           {% endif %} 
 
+		  <p>is_private: {{ page.is_private}}</p>
+		  
           {% if site.github.is_project_page and site.title == page.title and page.is_private != "yes" %}
             <a href="{{ site.github.repository_url }}" class="btn dark">View on GitHub</a>
           {% endif %}
