@@ -150,11 +150,15 @@ h1 {
         h2 {
             font-size: 1.2rem;
             font-weight: 300;
+            margin-top: 1rem;
+            @include large {
+                padding: 0 6rem;
+            }
         }
         .main-content {
             @include large {
                 max-width: 52rem;
-                padding: 2rem 0;
+                padding: 2rem 4rem;
             }
             @include medium {
                 margin: 0 4rem;
