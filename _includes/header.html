@@ -2,9 +2,9 @@
     <header class="site-header">
         <a href="/"><img src="assets/images/realwear-logo.png" width="141"/></a>
         <div class="text-right github">
-		    {% if page.is_private == false or page.is_private == blank %}
+		    {% unless page.is_private == true %}
               <a href="{{ site.github.repository_url }}">
-            {% endif %}
+            {% endunless %}
                 <span>{{ site.title | default: site.github.repository_name }}</span>
                 <img src="assets/images/github.png" height="32"/>
             {% if page.is_private != "yes" %}
