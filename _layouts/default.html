@@ -15,13 +15,8 @@
             <a href="https://realwear.github.io/">Developers Guide</a>  
             {% if page.optional-page-link %}
                 > <a href="{{ page.optional-page-link }}">{{ page.optional-page-title }}</a>
-            {% endif %} 
-			
-			<p>{{ page.url }}</p>
-			<p>{{ page.path }}</p>		
-			
-			
-            {% if site.github.source.path != "/" %}
+            {% endif %}			
+            {% if page.url != "/" %}
             > <a href="{{ site.github.url }}">{{ site.title }}</a>
             {% endif %} 
             > {{ page.title }}
