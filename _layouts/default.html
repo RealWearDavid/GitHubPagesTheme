@@ -16,6 +16,9 @@
             {% if page.optional-page-link %}
                 > <a href="{{ page.optional-page-link }}">{{ page.optional-page-title }}</a>
             {% endif %} 
+			
+			{{ site.github.source.path }}
+			
             {% if site.github.source.path != "/" %}
             > <a href="{{ site.github.url }}">{{ site.title }}</a>
             {% endif %} 
