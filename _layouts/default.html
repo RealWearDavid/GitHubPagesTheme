@@ -24,10 +24,6 @@
 
         <div class="main-content text-center">
           <h1 class="project-name">{{ page.title | default: site.github.repository_name }}</h1>
-
-          {% if page.description %}
-            <h2 class="project-tagline">{{ page.description }}</h2>
-          {% endif %} 
 		  
           {% if site.github.is_project_page and site.title == page.title %}
 		    {% unless page.is_private == true %}
