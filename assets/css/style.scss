@@ -219,12 +219,6 @@ h1 {
 .site-footer {
     text-align: center;
 }
-.visit {
-    margin-bottom: 5px !important;
-    a {
-        font-weight: 500;
-    }
-}
 .site-footer-owner {
     font-weight: normal;
 }
@@ -285,9 +279,8 @@ h1 {
 
     .hashtag {
         text-align: center;
-
         a {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #4526A8;
         }
     }
@@ -328,6 +321,14 @@ h1 {
 
         a {
             color: #939598;
+        }
+    }
+    .visit {
+        margin-bottom: 5px !important;
+        a {
+            font-weight: 500;
+            font-size: 1.2rem;
+            font-weight: 500;
         }
     }
 }
