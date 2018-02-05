@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+      <link rel="stylesheet" href="{{ '/assets/css/product.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    {% include header.html %}
+
+    <section class="page-header product">
+        <p class="breadcrumbs">
+            <a href="https://realwear.github.io/">Developer's guide</a>  
+            {% if page.optional-page-link %}
+                > <a href="{{ page.optional-page-link }}">{{ page.optional-page-title }}</a>
+            {% endif %}			
+            {% if page.url != "/" %}
+            > <a href="{{ site.github.url }}">{{ site.title }}</a>
+            {% endif %} 
+            > {{ page.title }}
+        </p>
+
+        <div class="main-content text-center">
+          <h1 class="project-name">{{ page.title | default: site.github.repository_name }}</h1>
+		  
+          {% if site.github.is_project_page and site.title == page.title %}
+		    {% unless page.is_private == true %}
+              <a href="{{ site.github.repository_url }}" class="btn dark">View on GitHub</a>
+            {% endunless %}
+          {% endif %}
+
+          {% if page.link %}
+            <a href="{{ page.link }}" class="btn dark">Downloads</a>
+          {% endif %}
+        </div>
+    </section>
+
+    <section class="main-content">
+      {{ content }}
+    </section>
+      {% include footer.html %}
+  </body>
+</html>

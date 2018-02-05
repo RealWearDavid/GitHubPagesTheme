@@ -18,6 +18,10 @@
 
     <div data-test="copyright_footer" class="copyright">
         <small>&copy; {{ date("Y") }} RealWear, Inc. All rights reserved.</small>
+        
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner">Repository maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+        {% endif %}
     </div>
     </div>
 </footer>
