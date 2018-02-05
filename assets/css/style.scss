@@ -95,13 +95,6 @@ a {
     color: black;
     padding: 0.8rem 0;
     text-align: left;
-    &.product {
-        background-color: #7F7F7F;
-        background-image: url(../images/product-bg.jpg);
-        @include large {
-            padding: 3rem 6rem;
-        }
-    }
     &.default {
         background: #F3F3F3;
     }
@@ -167,14 +160,13 @@ a {
         }
     }
 }
-
 .btn {
     position: relative;
     display: inline-block;
     line-height: 1;
     font-size: 0.9rem;
-    padding: 1.2em 3em;
-    min-width: 15rem;
+    padding: 1em 2.5em;
+    min-width: 12rem;
     text-align: center;
     transition: 0.3s ease all;
     -moz-transition: 0.3s ease all;
@@ -183,8 +175,8 @@ a {
     border: 1px solid white;
     border-radius: 0;
     &.dark {
-        color: #444;
-        border: 1px solid #444;
+        color: #666;
+        border: 1px solid #666;
     }
     &:hover {
         text-decoration: none;
