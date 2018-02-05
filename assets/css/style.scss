@@ -264,3 +264,68 @@ h1 {
 .site-footer-owner {
     font-weight: normal;
 }
+
+#main-footer {
+    background: #E7E7E7;
+    border-top: 4px solid white;
+    padding: 2rem 0 3rem 0;
+    text-align: center;
+    a {
+        font-weight: 400;
+    }
+
+    .hashtag {
+        text-align: center;
+        a {
+            font-size: 1rem;
+            color: #4526A8;
+        }
+    }
+
+    .social-icons {
+        margin: 1rem 0 1.5rem 0;
+        padding: 0;
+        text-align: center;
+
+        li {
+            display: inline;
+            padding: 0 0.25rem;
+
+             a {
+                 display: inline-block;
+                 position: relative;
+                 color: white;
+                 background: #939393;
+                 width: 2.25rem;
+                 height: 2.25rem;
+                 border-radius: 50%;
+                 font-size: 1.3rem;
+
+                 i {
+                     position: absolute;
+                     top: 50%;
+                     left: 50%;
+                     transform: translateX(-50%) translateY(-50%);
+                 }
+             }
+        }
+    }
+
+    .copyright, .policies {
+        text-align: center;
+        color: #939598;
+        font-size: 0.8rem;
+
+        a {
+            color: #939598;
+        }
+    }
+    .visit {
+        margin-bottom: 5px !important;
+        a {
+            font-weight: 500;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
+}
