@@ -170,7 +170,7 @@ a {
             background-size: contain;
             flex: 1 1 calc(15% - 1rem);
             min-height: 60px;
-            @include medium { 
+            @include small { 
                 flex: 1 1 calc(33.33% - 1rem);
             }
             &a:hover {
