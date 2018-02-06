@@ -169,8 +169,8 @@ a {
             @include medium { 
                 flex: 1 1 calc(33.33% - 1rem);
             }
-            &:hover {
-                background: #4822A9;
+            &a:hover {
+                background: #f7f7f7;
             }
             &.android {
                 background-image: url(../images/frameworks/android.png);
