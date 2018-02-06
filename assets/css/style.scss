@@ -159,6 +159,39 @@ a {
             background: #4822A9;
         }
     }
+    &.logos {
+        .flex-item {
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            flex: 1 1 calc(15% - 1rem);
+            @include medium { 
+                flex: 1 1 calc(33.33% - 1rem);
+            }
+            &:hover {
+                background: #4822A9;
+            }
+            &.android {
+                background-image: url(../images/frameworks/android.png);
+            }
+            &.cordova {
+                background-image: url(../images/frameworks/cordova.png);
+            }
+            &.html {
+                background-image: url(../images/frameworks/html.png);
+            }
+            &.react {
+                background-image: url(../images/frameworks/react-native.png);
+            }
+            &.unity {
+                background-image: url(../images/frameworks/unity.png);
+            }
+            &.xamarin {
+                background-image: url(../images/frameworks/xamarin.png);
+            }
+        }
+    }
 }
 .btn {
     position: relative;
