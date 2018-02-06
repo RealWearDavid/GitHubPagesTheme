@@ -160,12 +160,16 @@ a {
         }
     }
     &.logos {
+        @include large {
+            margin: 0 3rem;
+        }
         .flex-item {
             background-color: transparent;
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
             flex: 1 1 calc(15% - 1rem);
+            min-height: 60px;
             @include medium { 
                 flex: 1 1 calc(33.33% - 1rem);
             }
