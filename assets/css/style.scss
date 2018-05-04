@@ -3,6 +3,13 @@
 
 @import 'jekyll-theme-cayman';
 
+body {
+    font-family: "Roboto", sans-serif !important;
+}
+
+h1 {
+    font-size:30px;
+}
 a {
     color: #451cab;
     font-weight: 500;
@@ -203,6 +210,7 @@ a {
     line-height: 1;
     font-size: 0.9rem;
     padding: 1em 2.5em;
+    border-radius: none;
     min-width: 12rem;
     text-align: center;
     transition: 0.3s ease all;
@@ -211,6 +219,7 @@ a {
     color: white;
     border: 1px solid white;
     border-radius: 0;
+    margin-top: 15px !important;
     &.dark {
         color: #666;
         border: 1px solid #666;
@@ -361,4 +370,350 @@ a {
             font-weight: 500;
         }
     }
+}
+
+
+/* ===== Main Header ===== */
+
+#main-header {
+  background: #e7e7e7;
+  display: flex;
+  position: relative;
+}
+#main-header .header-logo {
+  flex: 1 1 10%;
+  max-width: 20%;
+}
+@media screen and (max-width: 767px) {
+  #main-header .header-logo {
+    display: block;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+}
+#main-header #main-navigation {
+  flex: 1 1 auto;
+  text-align: right;
+}
+#main-header .mobile-nav-toggle {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  #main-header .mobile-nav-toggle {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+  }
+  #main-header .mobile-nav-toggle button {
+    font-size: 1.5rem;
+    padding: 1rem;
+    line-height: 1;
+    border: none;
+    background: transparent;
+    color: #4e3895;
+  }
+  #main-header .mobile-nav-toggle button .close-menu {
+    display: none;
+  }
+  #main-header .mobile-nav-toggle button.menu-open .close-menu {
+    display: block;
+  }
+  #main-header .mobile-nav-toggle button.menu-open .open-menu {
+    display: none;
+  }
+  #main-header .mobile-nav-toggle button:focus,
+  #main-header .mobile-nav-toggle button:active {
+    outline: none;
+  }
+}
+/* ===== Header Logo ===== */
+.header-logo a {
+  display: inline-block;
+  height: 3.5rem;
+  padding: 0.7rem 1.5rem;
+}
+.header-logo a img {
+  max-height: 100%;
+}
+/* ===== Main Navigation ===== */
+#main-navigation {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+#main-navigation > ul {
+  display: inline-block !important;
+}
+#main-navigation ul {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  display: inline-block;
+}
+#main-navigation ul li {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  text-transform: capitalize;
+}
+#main-navigation ul li a {
+  display: inline-block;
+  text-align: left;
+  color: #4e3895;
+  padding: 1.25rem 0.75rem;
+  transition: 0.2s ease all;
+  line-height: 1;
+  font-size: 1rem;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+#main-navigation ul li a:hover,
+#main-navigation ul li a:focus,
+#main-navigation ul li a:visited {
+  text-decoration: none;
+}
+#main-navigation ul li a:hover {
+  color: black;
+}
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  #main-navigation ul li a {
+    font-size: 0.9rem;
+    padding: 1.25rem 0.5rem;
+  }
+}
+#main-navigation ul li ul {
+  z-index: 1000;
+}
+#main-navigation ul li > ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#main-navigation ul li > ul li a {
+  background: #e7e7e7;
+  width: 10rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+#main-navigation ul li > ul li:first-child a {
+  border-top: 1px solid #ccc;
+}
+#main-navigation ul li > ul li:last-child a {
+  border-bottom: none;
+}
+#main-navigation ul li > ul li ul.right,
+#main-navigation ul li > ul li ul {
+  top: -2px;
+  left: calc(100% - 2px);
+}
+#main-navigation ul li > ul li ul.left {
+  top: 0;
+  left: auto;
+  right: 100%;
+}
+#main-navigation ul li.active > a {
+  border-bottom-color: #4801af;
+}
+@media screen and (max-width: 767px) {
+  #main-navigation ul li.active > a {
+    background: #e7e7e7 !important;
+  }
+}
+#main-navigation ul li.cta {
+  float: right;
+}
+#main-navigation ul li.cta a {
+  padding: 1.25rem 1.5rem;
+  background: #4816ac;
+  color: white;
+  margin-left: 0.5rem;
+}
+#main-navigation ul.no-js li:hover > ul {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  #main-navigation {
+    position: absolute;
+    top: 100%;
+    display: block;
+    width: 100%;
+    z-index: 999;
+  }
+  #main-navigation > ul {
+    display: none !important;
+  }
+  #main-navigation > ul.mobile-nav-open {
+    display: block !important;
+    position: relative;
+  }
+  #main-navigation > ul.mobile-nav-open li {
+    display: block !important;
+  }
+  #main-navigation > ul.mobile-nav-open li a {
+    width: 100% !important;
+    padding: 1.25rem 0.75rem !important;
+    background: #f3f1f1;
+    border: 3px solid white;
+    border-top: none;
+    text-align: left;
+  }
+  #main-navigation > ul.mobile-nav-open li.cta {
+    float: none;
+  }
+  #main-navigation > ul.mobile-nav-open li.cta a {
+    margin: 0;
+    background: #4816ac;
+    color: white;
+  }
+  #main-navigation > ul.mobile-nav-open > li:first-child a {
+    border-top: 3px solid white;
+  }
+  #main-navigation > ul.mobile-nav-open li ul {
+    display: block !important;
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+  }
+  #main-navigation > ul.mobile-nav-open li ul li a {
+    background: #e5e5e5;
+    border: none;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+  }
+  #main-navigation > ul.mobile-nav-open li ul li:last-child a {
+    border-bottom: 3px solid white;
+  }
+}
+
+/* ===== Compact page title ===== */
+
+.btn-top {
+    margin-left: 20px;
+    outline: none !important;
+    float: right;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    font-size: 13px;
+    min-width: 6rem;
+    text-align: center;
+    transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    color: #9a9a9a !important;
+    background: transparent;
+    text-transform: none;
+    border: 1px solid #9a9a9a;
+    padding: 8px 12px;
+    font-weight: 300;
+}
+.btn-top:hover, .btn-top:focus {
+    text-decoration: none;
+    background: #4e3895;
+    color: #fff !important;
+    border-color: #4e3895;
+}
+.btn-top:active {
+    bottom: -2px;
+}
+.news-header {
+    padding: 1rem 0 1rem;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+.news-header .page-title {
+    font-size: 18px;
+    text-align: left;
+    float: left;
+    margin: 0;
+    color: black;
+    font-weight: 500;
+}
+.news-header .header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.news-header .header-top .page-title, .news-header .header-top .category-buttons {
+  flex: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .news-header .header-top {
+    display: block;
+  }
+  .news-header .header-top .page-title, .news-header .header-top .category-buttons {
+    width: 100%;
+  }
+  .btn-top {
+    float: left;
+    margin: 10px 10px 0 0;
+  }
+}
+.category .no-results .news-header{
+    background: none;
+}
+.category .no-results .news-header .page-title {
+    color: black;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 960px !important;
+    }
+}
+
+#revue-embed {
+    padding: 20px 0;
+}
+#revue-embed h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: black;
+}
+.revue-form-group label {
+    width: 160px;
+    text-align: left;
+    color: #3D3D3D;
+}
+@media (min-width: 960px) {
+.modal-dialog {
+    min-width: 600px;
+}
+}
+.revue-form-group input {
+    margin-bottom: 10px;
+    padding: 12px 10px;
+    color: #020202;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder { /* Chrome/Opera/Safari */
+      color: #9C9C9C;
+    }
+}
+.revue-form-actions input[type="submit"].cta{
+    margin: 10px 0;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    color: #9A9A9A;
+    border: 1px solid #9A9A9A;
+    border-radius: 0;
+    background: none;
+    text-transform: none;
+    font-size: 15px;
+        padding: 0.75rem 3rem;
+}
+.revue-form-actions input[type="submit"].cta:hover {
+    text-decoration: none;
+    background: #4822A9;
+    color: white;
+    border-color: #4822A9;
 }
