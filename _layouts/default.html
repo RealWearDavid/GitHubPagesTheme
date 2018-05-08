@@ -5,11 +5,11 @@
     <link rel="stylesheet" href="{{ '/assets/css/product.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    {% include product-header.html %}
+    {% include header.html %}
 
     <section class="page-header product">
         <p class="breadcrumbs">
-            <a href="https://realwear.github.io/">Developer's guide</a>  
+            <a href="https://realwear.github.io/">Developers</a>  
             {% if page.optional-page-link %}
                 > <a href="{{ page.optional-page-link }}">{{ page.optional-page-title }}</a>
             {% endif %}			
