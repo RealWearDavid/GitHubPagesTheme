@@ -601,7 +601,8 @@ a {
     position: relative;
     display: inline-block;
     line-height: 1;
-    font-size: 13px;
+    font-size: 12px;
+    letter-spacing: 0.4px;
     min-width: 6rem;
     text-align: center;
     transition: 0.3s ease all;
@@ -627,6 +628,7 @@ a {
     padding: 1rem 0 1rem;
     background: white;
     border-bottom: 1px solid #eee;
+    overflow: hidden;
 }
 .news-header .page-title {
     font-size: 18px;
