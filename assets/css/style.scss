@@ -38,8 +38,8 @@ a {
         vertical-align: middle;
         margin-left: 5px;
     }
-} 
-@include small { 
+}
+@include small {
     .github span {
         display: none;
     }
@@ -116,7 +116,7 @@ a {
             margin-top: 0;
             font-size: 1.5rem;
         }
-    } 
+    }
     .btn {
         margin-top: 1rem;
     }
@@ -161,7 +161,7 @@ a {
         color: #fff;
         transition: background 0.5s;
         text-decoration: none;
-        @include medium { 
+        @include medium {
             flex: 1 1 calc(33.33% - 1rem);
         }
         @include small {
@@ -182,7 +182,7 @@ a {
             background-size: contain;
             flex: 1 1 calc(15% - 1rem);
             min-height: 60px;
-            @include small { 
+            @include small {
                 flex: 1 1 calc(33.33% - 1rem);
             }
             &a:hover {
@@ -590,6 +590,11 @@ a {
   }
   #main-navigation > ul.mobile-nav-open li ul li:last-child a {
     border-bottom: 3px solid white;
+  }
+}
+@media screen and (max-width: 767px) {
+  .dropdown-nav > ul {
+      display: none !important;
   }
 }
 
