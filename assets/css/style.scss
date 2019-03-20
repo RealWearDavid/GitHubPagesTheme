@@ -212,28 +212,32 @@ a {
 .btn {
     position: relative;
     display: inline-block;
-    line-height: 1;
-    font-size: 0.9rem;
-    padding: 1em 2.5em;
-    border-radius: none;
-    min-width: 12rem;
+    line-height: 1.2rem;
+    font-size: 14px !important;
+	font-weight: 300 !important;
+    padding: 15px 20px;
+    min-width: 14rem;
+	width: 15rem;
+    max-width: 17rem;
+	background-color: #4E3895 !important;
     text-align: center;
     transition: 0.3s ease all;
     -moz-transition: 0.3s ease all;
     -webkit-transition: 0.3s ease all;
-    color: white;
-    border: 1px solid white;
+    color: #fff !important;
+    border: 1px groove #fff !important;
     border-radius: 0;
     margin-top: 15px !important;
     &.dark {
-        color: #666;
-        border: 1px solid #666;
+        color: #fff !important;
+        border: 1px groove #fff !important;
     }
     &:hover {
         text-decoration: none;
-        background: $core-purple;
-        color: white;
-        border-color: $core-purple;
+        background-color: #7454a2 !important;
+        color: #fff !important;
+        border: 1px solid #fff !important;
+        animation: pulse 2s infinite;
     }
 }
 .icon-block {
