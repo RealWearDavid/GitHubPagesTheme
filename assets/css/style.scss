@@ -449,8 +449,14 @@ a {
 /* ===== Main Navigation ===== */
 #main-navigation {
   position: relative;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+/* ===== Main Navigation ===== */
+#main-navigation {
+  position: relative;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 #main-navigation > ul {
   display: inline-block !important;
@@ -470,7 +476,7 @@ a {
 #main-navigation ul li a {
   display: inline-block;
   text-align: left;
-  color: #4e3895;
+  color: #000;
   padding: 1.25rem 0.75rem;
   transition: 0.2s ease all;
   line-height: 1;
@@ -479,13 +485,12 @@ a {
   border-bottom: 4px solid transparent;
 }
 #main-navigation ul li a:hover,
-#main-navigation ul li a:focus,
-#main-navigation ul li a:visited {
+#main-navigation ul li a:focus, {
   text-decoration: none;
+  background-color: #d3d3d3!important;
 }
 #main-navigation ul li a:hover {
   color: black;
-  background-color: #d3d3d3;
 }
 @media screen and (max-width: 991px) and (min-width: 767px) {
   #main-navigation ul li a {
@@ -504,7 +509,7 @@ a {
 }
 #main-navigation ul li > ul li a {
   background: #e7e7e7;
-  width: 14rem;
+  width: 10rem;
   padding: 0.75rem 1rem;
   border-bottom: 1px solid #ccc;
 }
@@ -525,7 +530,7 @@ a {
   right: 100%;
 }
 #main-navigation ul li.active > a {
-  border-bottom-color: #4801af;
+  border-bottom-color: #444;
 }
 @media screen and (max-width: 767px) {
   #main-navigation ul li.active > a {
@@ -537,7 +542,7 @@ a {
 }
 #main-navigation ul li.cta a {
   padding: 1.25rem 1.5rem;
-  background: #4E3995;
+  background: #444;
   color: white;
   margin-left: 0.5rem;
 }
@@ -575,7 +580,7 @@ a {
   }
   #main-navigation > ul.mobile-nav-open li.cta a {
     margin: 0;
-    background: #4816ac;
+    background: #444;
     color: white;
   }
   #main-navigation > ul.mobile-nav-open > li:first-child a {
@@ -628,9 +633,9 @@ a {
 }
 .btn-top:hover, .btn-top:focus {
     text-decoration: none;
-    background: #4e3895;
+    background: #444;
     color: #fff !important;
-    border-color: #4e3895;
+    border-color: #444;
 }
 .btn-top:active {
     bottom: -2px;
@@ -730,7 +735,7 @@ a {
 }
 .revue-form-actions input[type="submit"].cta:hover {
     text-decoration: none;
-    background: #4822A9;
+    background: #444;
     color: white;
-    border-color: #4822A9;
+    border-color: #4822A4449;
 }
